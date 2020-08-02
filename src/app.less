@@ -1,1 +1,49 @@
 @import "~antd/dist/antd.less";
+
+.site-layout-content {
+  background: #fff;
+  padding: 30px;
+  min-height: 100%;
+}
+
+.faqs-layout {
+  background: #fff;
+  padding: 50px 400px;
+}
+
+.faqs-list {
+  height: calc(100vh - 450px);
+  overflow-y: auto;
+  margin-top: "10px";
+}
+
+.faqs-fields {
+  height: calc(100vh - 500px);
+  overflow-y: auto;
+  text-align: center;
+}
+
+.faq-panel {
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+[data-theme="compact"]
+  .site-collapse-custom-collapse
+  .site-collapse-custom-panel,
+.site-collapse-custom-collapse .site-collapse-custom-panel {
+  background: #f7f7f7;
+  border-radius: 2px;
+  margin-bottom: 24px;
+  border: 0px;
+  overflow: hidden;
+}
+
+.ant-form-item-label > label.ant-form-item-required::before {
+  display: none;
+  margin-right: 4px;
+  color: #ff4d4f;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: "*";
+}
